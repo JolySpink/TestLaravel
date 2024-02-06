@@ -16,7 +16,7 @@ class PhotoRequestController extends Controller
         $path = 'storage/' . $name;
         $maxRGB = $this->maxRGB($path);
         $this->stamp($path,$maxRGB);
-        dd($this->stamp($path,$maxRGB));
+        return $this->stamp($path,$maxRGB);
 
     }
 
